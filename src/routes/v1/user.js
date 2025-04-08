@@ -5,8 +5,8 @@ import { verify_token, verify_role } from "../../middlewares/verify_token.js";
 const router = express.Router();
 
 router.post('/add',
-    verify_token,
-    verify_role(["admin"]),
+    // verify_token,
+    // verify_role(["admin"]),
     controllers.addUserController
     /*
         #swagger.requestBody = {
